@@ -9,11 +9,9 @@ import { BRAND_NAME } from '../constants';
 
 interface NavbarProps {
   onNavClick: (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => void;
-  cartCount: number;
-  onOpenCart: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ onNavClick, cartCount, onOpenCart }) => {
+const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -30,10 +28,10 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick, cartCount, onOpenCart }) =>
     onNavClick(e, targetId);
   };
 
-  const handleCartClick = (e: React.MouseEvent) => {
+  const handleContactClick = (e: React.MouseEvent) => {
       e.preventDefault();
       setMobileMenuOpen(false);
-      onOpenCart();
+      onNavClick(e as any, 'contact');
   }
 
   // Determine text color based on state
@@ -68,6 +66,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick, cartCount, onOpenCart }) =>
           {/* Center Links - Desktop */}
           <div className={`hidden md:flex items-center gap-12 text-sm font-medium tracking-widest uppercase transition-colors duration-500 ${textColorClass}`}>
             <a href="#services" onClick={(e) => handleLinkClick(e, 'services')} className="hover:opacity-60 transition-opacity">Services</a>
+            <a href="#portfolio" onClick={(e) => handleLinkClick(e, 'portfolio')} className="hover:opacity-60 transition-opacity">Portfolio</a>
             <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="hover:opacity-60 transition-opacity">Philosophy</a>
             <a href="#journal" onClick={(e) => handleLinkClick(e, 'journal')} className="hover:opacity-60 transition-opacity">Insights</a>
           </div>
@@ -75,10 +74,10 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick, cartCount, onOpenCart }) =>
           {/* Right Actions */}
           <div className={`flex items-center gap-6 z-50 relative transition-colors duration-500 ${textColorClass}`}>
             <button 
-              onClick={handleCartClick}
-              className="text-sm font-medium uppercase tracking-widest hover:opacity-60 transition-opacity hidden sm:block"
+              onClick={handleContactClick}
+              className="px-6 py-2 bg-[#EF4444] text-white text-xs font-bold uppercase tracking-widest hover:bg-[#DC2626] transition-colors hidden sm:block"
             >
-              Project Brief ({cartCount})
+              Contact Us
             </button>
             
             {/* Mobile Menu Toggle */}
@@ -106,13 +105,14 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick, cartCount, onOpenCart }) =>
       }`}>
           <div className="flex flex-col items-center space-y-8 text-xl font-serif font-medium text-[#2C2A26]">
             <a href="#services" onClick={(e) => handleLinkClick(e, 'services')} className="hover:opacity-60 transition-opacity">Services</a>
+            <a href="#portfolio" onClick={(e) => handleLinkClick(e, 'portfolio')} className="hover:opacity-60 transition-opacity">Portfolio</a>
             <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="hover:opacity-60 transition-opacity">Philosophy</a>
             <a href="#journal" onClick={(e) => handleLinkClick(e, 'journal')} className="hover:opacity-60 transition-opacity">Insights</a>
             <button 
-                onClick={handleCartClick} 
-                className="hover:opacity-60 transition-opacity text-base uppercase tracking-widest font-sans mt-8"
+                onClick={handleContactClick} 
+                className="px-8 py-3 bg-[#EF4444] text-white text-sm uppercase tracking-widest font-bold mt-8"
             >
-                Project Brief ({cartCount})
+                Contact Us
             </button>
           </div>
       </div>

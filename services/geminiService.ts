@@ -20,6 +20,7 @@ const getSystemInstruction = () => {
   
   Answer potential client questions about our services, technical stack, and engineering philosophy.
   Keep answers concise (under 3 sentences usually) to fit the chat UI. 
+  Encourage users to use the "Contact Us" button or form to start a conversation about their specific project.
   If asked about services not in the list, explain how our technical expertise might apply or steer them toward a custom solution.`;
 };
 

@@ -4,10 +4,10 @@ import { Service } from '../types';
 interface ServiceDetailProps {
   service: Service;
   onBack: () => void;
-  onAddToInquiry: (service: Service) => void;
+  onInquire: (service: Service) => void;
 }
 
-const ServiceDetail: React.FC<ServiceDetailProps> = ({ service, onBack, onAddToInquiry }) => {
+const ServiceDetail: React.FC<ServiceDetailProps> = ({ service, onBack, onInquire }) => {
   return (
     <div className="pt-24 min-h-screen bg-[#F5F2EB] animate-fade-in-up">
       <div className="max-w-[1800px] mx-auto px-6 md:px-12 pb-24">
@@ -48,10 +48,10 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ service, onBack, onAddToI
 
              <div className="flex flex-col gap-4">
                <button 
-                 onClick={() => onAddToInquiry(service)}
+                 onClick={() => onInquire(service)}
                  className="w-full py-5 bg-[#EF4444] text-white uppercase tracking-widest text-sm font-bold hover:bg-[#DC2626] transition-colors"
                >
-                 Add to Project Brief
+                 Inquire About This Service
                </button>
                <div className="mt-8">
                  <h4 className="text-xs font-bold uppercase tracking-widest text-[#2C2A26] mb-4">What's Included</h4>

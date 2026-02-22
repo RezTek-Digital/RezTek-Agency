@@ -9,19 +9,17 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ServiceGrid from './components/ServiceGrid';
 import About from './components/About';
+import Portfolio from './components/Portfolio';
 import Journal from './components/Journal';
 import Assistant from './components/Assistant';
 import Footer from './components/Footer';
 import ServiceDetail from './components/ServiceDetail';
 import JournalDetail from './components/JournalDetail';
-import InquiryDrawer from './components/InquiryDrawer';
 import InquiryForm from './components/InquiryForm';
 import { Service, JournalArticle, ViewState } from './types';
 
 function App() {
   const [view, setView] = useState<ViewState>({ type: 'home' });
-  const [inquiryItems, setInquiryItems] = useState<Service[]>([]);
-  const [isInquiryOpen, setIsInquiryOpen] = useState(false);
 
   // Handle navigation (clicks on Navbar or Footer links)
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
@@ -43,6 +41,12 @@ function App() {
         return;
     }
     
+    if (targetId === 'contact') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setView({ type: 'inquiry' });
+      return;
+    }
+
     const element = document.getElementById(targetId);
     if (element) {
       // Manual scroll calculation to account for fixed header
@@ -63,24 +67,11 @@ function App() {
     }
   };
 
-  const addToInquiry = (service: Service) => {
-    setInquiryItems([...inquiryItems, service]);
-    setIsInquiryOpen(true);
-  };
-
-  const removeFromInquiry = (index: number) => {
-    const newItems = [...inquiryItems];
-    newItems.splice(index, 1);
-    setInquiryItems(newItems);
-  };
-
   return (
     <div className="min-h-screen bg-[#F5F2EB] font-sans text-[#2C2A26] selection:bg-[#D6D1C7] selection:text-[#2C2A26]">
       {view.type !== 'inquiry' && (
         <Navbar 
             onNavClick={handleNavClick} 
-            cartCount={inquiryItems.length}
-            onOpenCart={() => setIsInquiryOpen(true)}
         />
       )}
       
@@ -92,6 +83,7 @@ function App() {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 setView({ type: 'service', service: s });
             }} />
+            <Portfolio />
             <About />
             <Journal onArticleClick={(a) => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -107,7 +99,10 @@ function App() {
               setView({ type: 'home' });
               setTimeout(() => scrollToSection('services'), 50);
             }}
-            onAddToInquiry={addToInquiry}
+            onInquire={(s) => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              setView({ type: 'inquiry', service: s });
+            }}
           />
         )}
 
@@ -120,7 +115,7 @@ function App() {
 
         {view.type === 'inquiry' && (
             <InquiryForm 
-                items={inquiryItems}
+                service={view.service}
                 onBack={() => setView({ type: 'home' })}
             />
         )}
@@ -129,18 +124,6 @@ function App() {
       {view.type !== 'inquiry' && <Footer onLinkClick={handleNavClick} />}
       
       <Assistant />
-      
-      <InquiryDrawer 
-        isOpen={isInquiryOpen}
-        onClose={() => setIsInquiryOpen(false)}
-        items={inquiryItems}
-        onRemoveItem={removeFromInquiry}
-        onCheckout={() => {
-            setIsInquiryOpen(false);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            setView({ type: 'inquiry' });
-        }}
-      />
     </div>
   );
 }
