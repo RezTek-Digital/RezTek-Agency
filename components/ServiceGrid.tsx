@@ -24,8 +24,8 @@ const ServiceGrid: React.FC<ServiceGridProps> = ({ onServiceClick }) => {
   }, [activeCategory]);
 
   return (
-    <section id="services" className="py-32 px-6 md:px-12 bg-[#F5F2EB]">
-      <div className="max-w-[1800px] mx-auto">
+    <section id="services" className="min-h-screen flex items-center py-24 px-6 md:px-12 bg-[#F5F2EB]">
+      <div className="max-w-[1800px] mx-auto w-full">
         
         {/* Header Area */}
         <div className="flex flex-col items-center text-center mb-24 space-y-8">

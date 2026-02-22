@@ -35,8 +35,7 @@ const Footer: React.FC<FooterProps> = ({ onLinkClick }) => {
             referrerPolicy="no-referrer"
           />
           <p className="max-w-xs font-light leading-relaxed">
-            Technical excellence meets intentional design.
-            Engineering high-performance digital solutions for the bold.
+            Engineering the digital frontier, one pixel at a time.
           </p>
         </div>
 
@@ -53,10 +52,10 @@ const Footer: React.FC<FooterProps> = ({ onLinkClick }) => {
         <div className="md:col-span-2">
           <h4 className="font-medium text-[#2C2A26] mb-6 tracking-wide text-sm uppercase">Agency</h4>
           <ul className="space-y-4 font-light">
-            <li><a href="#portfolio" onClick={(e) => onLinkClick(e, 'portfolio')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Portfolio</a></li>
-            <li><a href="#about" onClick={(e) => onLinkClick(e, 'about')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Philosophy</a></li>
-            <li><a href="#about" onClick={(e) => onLinkClick(e, 'about')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Sustainability</a></li>
-            <li><a href="#journal" onClick={(e) => onLinkClick(e, 'journal')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Insights</a></li>
+            <li><a href="#portfolio" onClick={(e) => onLinkClick(e, 'portfolio')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Our Work</a></li>
+            <li><a href="#about" onClick={(e) => onLinkClick(e, 'about')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">The Mindset</a></li>
+            <li><a href="#services" onClick={(e) => onLinkClick(e, 'services')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Care Plans</a></li>
+            <li><a href="#" className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Privacy</a></li>
           </ul>
         </div>
 
@@ -85,7 +84,7 @@ const Footer: React.FC<FooterProps> = ({ onLinkClick }) => {
       </div>
 
       <div className="max-w-[1800px] mx-auto mt-20 pt-8 border-t border-[#D6D1C7] flex flex-col md:flex-row justify-between items-center text-xs uppercase tracking-widest opacity-60">
-        <p>Created by @chanelluuh</p>
+        <p>© 2026 RezTek Digital. Stay True.</p>
       </div>
     </footer>
   );

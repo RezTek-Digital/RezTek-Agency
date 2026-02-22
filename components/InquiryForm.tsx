@@ -25,9 +25,9 @@ const InquiryForm: React.FC<InquiryFormProps> = ({ service, onBack }) => {
           {/* Left Column: Info */}
           <div className="md:col-span-4 space-y-12">
             <div>
-              <h1 className="text-4xl font-serif text-[#2C2A26] mb-6 uppercase tracking-tighter font-bold">Get in <br/><span className="text-[#EF4444]">Touch.</span></h1>
+              <h1 className="text-4xl font-serif text-[#2C2A26] mb-6 uppercase tracking-tighter font-bold">Let’s Talk <br/><span className="text-[#EF4444]">Shop.</span></h1>
               <p className="text-[#5D5A53] font-light leading-relaxed">
-                Ready to engineer your digital future? Whether you have a specific project in mind or just want to explore the possibilities, we're here to help.
+                Ready to build something that lasts? Drop us a line. We’re usually around, unless we’re off the grid for a weekend.
               </p>
             </div>
 
@@ -38,7 +38,7 @@ const InquiryForm: React.FC<InquiryFormProps> = ({ service, onBack }) => {
               </div>
               <div>
                 <h4 className="text-xs font-bold uppercase tracking-widest text-[#2C2A26] mb-2">Visit Us</h4>
-                <p className="text-[#5D5A53] font-light">Digital Nomad Hub<br/>Remote-First Agency</p>
+                <p className="text-[#5D5A53] font-light">From the Road<br/>(Remote-First)</p>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ const InquiryForm: React.FC<InquiryFormProps> = ({ service, onBack }) => {
                 type="submit"
                 className="w-full py-5 bg-[#EF4444] text-white uppercase tracking-widest text-sm font-bold hover:bg-[#DC2626] transition-colors"
               >
-                Send Message
+                Send the Message
               </button>
             </form>
           </div>

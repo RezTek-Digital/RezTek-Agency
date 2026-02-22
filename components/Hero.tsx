@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
       <div className="relative z-10 h-full flex flex-col justify-center items-start text-left md:items-center md:text-center px-6">
         <div className="animate-fade-in-up w-full md:w-auto">
           <span className="block text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-white/90 mb-6 backdrop-blur-md bg-black/20 px-6 py-2 rounded-none border border-white/20 mx-0 md:mx-auto w-fit">
-            High-Performance Web Solutions
+            Built to last. Built to run.
           </span>
           <img 
             src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=400" 
@@ -59,8 +59,7 @@ const Hero: React.FC = () => {
             referrerPolicy="no-referrer"
           />
           <p className="max-w-xl mx-0 md:mx-auto text-lg md:text-xl text-white/90 font-medium leading-relaxed mb-12 text-shadow-lg">
-            Technical excellence meets intentional design. <br/>
-            Building high-performance digital solutions for the bold.
+            We build high-performance websites for small businesses that give a damn. No corporate jargon, no bloated templates—just clean code, retro aesthetics, and digital tools that actually work.
           </p>
           
           <a 
@@ -68,7 +67,7 @@ const Hero: React.FC = () => {
             onClick={(e) => handleNavClick(e, 'services')}
             className="group relative px-12 py-5 bg-[#EF4444] text-white rounded-none text-sm font-bold uppercase tracking-[0.2em] hover:bg-[#DC2626] transition-all duration-500 overflow-hidden shadow-2xl inline-block"
           >
-            <span className="relative z-10">Start Your Project</span>
+            <span className="relative z-10">Start a Project</span>
           </a>
         </div>
       </div>

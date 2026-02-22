@@ -14,12 +14,12 @@ interface JournalProps {
 
 const Journal: React.FC<JournalProps> = ({ onArticleClick }) => {
   return (
-    <section id="journal" className="bg-[#F5F2EB] py-32 px-6 md:px-12">
-      <div className="max-w-[1800px] mx-auto">
+    <section id="journal" className="min-h-screen flex items-center py-24 px-6 md:px-12 bg-[#F5F2EB]">
+      <div className="max-w-[1800px] mx-auto w-full">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 pb-8 border-b border-[#D6D1C7]">
             <div>
                 <span className="block text-xs font-bold uppercase tracking-[0.2em] text-[#A8A29E] mb-4">Editorial</span>
-                <h2 className="text-4xl md:text-6xl font-serif text-[#2C2A26]">Insights</h2>
+                <h2 className="text-4xl md:text-6xl font-serif text-[#2C2A26]">The Journal</h2>
             </div>
         </div>
 

@@ -4,32 +4,32 @@ const projects = [
   {
     id: 1,
     title: "Vanguard Logistics",
-    category: "E-commerce & Supply Chain",
-    description: "A high-performance logistics platform with real-time tracking and automated inventory management.",
+    category: "Industrial & Gritty",
+    description: "Tracking that actually works on a phone in a warehouse.",
     imageUrl: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200",
     year: "2025"
   },
   {
     id: 2,
     title: "Nexus FinTech",
-    category: "Financial Services",
-    description: "A secure, scalable dashboard for digital asset management and market analytics.",
+    category: "Mid-Century Modern",
+    description: "Making complex data feel as simple as a vinyl record.",
     imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
     year: "2024"
   },
   {
     id: 3,
     title: "Aether Architecture",
-    category: "Portfolio & Design",
-    description: "A minimalist, image-heavy portfolio site for an international architecture firm.",
+    category: "Clean & Spacious",
+    description: "Letting the blueprints do the talking.",
     imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
     year: "2025"
   },
   {
     id: 4,
     title: "Titan Energy",
-    category: "Industrial Tech",
-    description: "A technical site showcasing renewable energy solutions and real-time grid monitoring.",
+    category: "Bold & Reliable",
+    description: "A technical site that feels as sturdy as a steel beam.",
     imageUrl: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=1200",
     year: "2024"
   }
@@ -37,17 +37,17 @@ const projects = [
 
 const Portfolio: React.FC = () => {
   return (
-    <section id="portfolio" className="py-32 px-6 md:px-12 bg-[#1A1A1A] text-white overflow-hidden">
-      <div className="max-w-[1800px] mx-auto">
+    <section id="portfolio" className="min-h-screen flex items-center py-24 px-6 md:px-12 bg-[#1A1A1A] text-white overflow-hidden">
+      <div className="max-w-[1800px] mx-auto w-full">
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
           <div className="max-w-2xl">
-            <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#EF4444] mb-6 block">Selected Works</span>
+            <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#EF4444] mb-6 block">The Gallery</span>
             <h2 className="text-5xl md:text-7xl font-serif font-bold uppercase tracking-tighter leading-none">
-              Engineering <br /> <span className="text-white/40">Digital Impact.</span>
+              Real Work <br /> <span className="text-white/40">for Real People.</span>
             </h2>
           </div>
           <p className="text-white/60 max-w-sm font-light leading-relaxed">
-            A showcase of high-performance digital solutions engineered for technical excellence and business growth.
+            A look at the digital ecosystems we’ve built for brands with a pulse.
           </p>
         </div>
 
