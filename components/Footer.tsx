@@ -5,6 +5,7 @@
 
 
 import React, { useState } from 'react';
+import Logo from './Logo';
 
 interface FooterProps {
   onLinkClick: (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => void;
@@ -28,12 +29,7 @@ const Footer: React.FC<FooterProps> = ({ onLinkClick }) => {
       <div className="max-w-[1800px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
         
         <div className="md:col-span-4">
-          <img 
-            src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=200" 
-            alt="RezTek Digital Logo" 
-            className="h-16 w-auto object-contain mb-6"
-            referrerPolicy="no-referrer"
-          />
+          <Logo variant="dark" className="h-16 w-auto mb-6" />
           <p className="max-w-xs font-light leading-relaxed">
             Engineering the digital frontier, one pixel at a time.
           </p>

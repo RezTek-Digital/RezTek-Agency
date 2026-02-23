@@ -5,6 +5,7 @@
 
 
 import React from 'react';
+import Logo from './Logo';
 
 const Hero: React.FC = () => {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
@@ -52,12 +53,9 @@ const Hero: React.FC = () => {
           <span className="block text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-white/90 mb-6 backdrop-blur-md bg-black/20 px-6 py-2 rounded-none border border-white/20 mx-0 md:mx-auto w-fit">
             Built to last. Built to run.
           </span>
-          <img 
-            src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=400" 
-            alt="RezTek Digital Logo" 
-            className="h-32 md:h-48 w-auto object-contain mb-8 mx-0 md:mx-auto brightness-0 invert drop-shadow-2xl"
-            referrerPolicy="no-referrer"
-          />
+          <div className="mb-8 flex justify-center">
+            <Logo variant="light" className="h-24 md:h-32 w-auto" />
+          </div>
           <p className="max-w-xl mx-0 md:mx-auto text-lg md:text-xl text-white/90 font-medium leading-relaxed mb-12 text-shadow-lg">
             We build high-performance websites for small businesses that give a damn. No corporate jargon, no bloated templates—just clean code, retro aesthetics, and digital tools that actually work.
           </p>

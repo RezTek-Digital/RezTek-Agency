@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply font-sans bg-[#F5F2EB] text-[#2C2A26] antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tighter uppercase;
+  }
+}
+
+@layer utilities {
+  .text-shadow-lg {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .editorial-heading {
+    @apply font-serif italic tracking-tight;
+  }
+
+  .meta-label {
+    @apply font-sans text-[10px] font-bold uppercase tracking-[0.3em] text-[#EF4444];
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s cubic-bezier(0.2, 1, 0.3, 1) forwards;
+}
+
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-400 { animation-delay: 0.4s; }

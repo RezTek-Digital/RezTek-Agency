@@ -6,6 +6,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { BRAND_NAME } from '../constants';
+import Logo from './Logo';
 
 interface NavbarProps {
   onNavClick: (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => void;
@@ -55,12 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
             }}
             className="z-50 relative transition-transform duration-500 hover:scale-105"
           >
-            <img 
-              src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=200" 
-              alt="RezTek Digital Logo" 
-              className="h-12 w-auto object-contain brightness-0 invert"
-              referrerPolicy="no-referrer"
-            />
+            <Logo variant={scrolled || mobileMenuOpen ? 'dark' : 'light'} />
           </a>
           
           {/* Center Links - Desktop */}
