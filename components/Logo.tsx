@@ -5,11 +5,14 @@ interface LogoProps {
   variant?: 'light' | 'dark';
 }
 
-/**
- * Logo Component
- * Centralized place to manage the brand logo.
- * Replace the SVG or Image source here to update it everywhere.
- */
+// Example: To use your own image in Logo.tsx
+return (
+  <img 
+    src="/components/logo.png" 
+    className={className} 
+    alt="RezTek Logo" 
+  />
+);
 const Logo: React.FC<LogoProps> = ({ className = "h-12 w-auto", variant = 'dark' }) => {
   // For now, we use a stylized text-based logo with a graphic element
   // This is better than a random Unsplash image for a logo.
