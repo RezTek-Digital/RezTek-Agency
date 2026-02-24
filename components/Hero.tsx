@@ -51,13 +51,13 @@ const Hero: React.FC = () => {
       <div className="relative z-10 h-full flex flex-col justify-center items-start text-left md:items-center md:text-center px-6">
         <div className="animate-fade-in-up w-full md:w-auto">
           <span className="block text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-white/90 mb-6 backdrop-blur-md bg-black/20 px-6 py-2 rounded-none border border-white/20 mx-0 md:mx-auto w-fit">
-            Built to last. Built to run.
+            Built with community in mind.
           </span>
           <div className="mb-8 flex justify-center">
             <Logo variant="light" className="h-24 md:h-32 w-auto" />
           </div>
           <p className="max-w-xl mx-0 md:mx-auto text-lg md:text-xl text-white/90 font-medium leading-relaxed mb-12 text-shadow-lg">
-            We build high-performance websites for small businesses that give a damn. No corporate jargon, no bloated templates—just clean code, retro aesthetics, and digital tools that actually work.
+            Small business is community business. We build clean, fast, no-nonsense websites for small businesses and the people doing the real work — no bloat, no BS, just the tools your business actually needs. Nothing more.
           </p>
           
           <a 
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
             onClick={(e) => handleNavClick(e, 'services')}
             className="group relative px-12 py-5 bg-[#EF4444] text-white rounded-none text-sm font-bold uppercase tracking-[0.2em] hover:bg-[#DC2626] transition-all duration-500 overflow-hidden shadow-2xl inline-block"
           >
-            <span className="relative z-10">Start a Project</span>
+            <span className="relative z-10">Get the Ball Rolling</span>
           </a>
         </div>
       </div>

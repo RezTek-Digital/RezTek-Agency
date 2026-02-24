@@ -25,9 +25,9 @@ const InquiryForm: React.FC<InquiryFormProps> = ({ service, onBack }) => {
           {/* Left Column: Info */}
           <div className="md:col-span-4 space-y-12">
             <div>
-              <h1 className="text-4xl font-serif text-[#2C2A26] mb-6 uppercase tracking-tighter font-bold">Let’s Talk <br/><span className="text-[#EF4444]">Shop.</span></h1>
+              <h1 className="text-4xl font-serif text-[#2C2A26] mb-6 uppercase tracking-tighter font-bold">Let’s Work It <br/><span className="text-[#EF4444]">Out Together.</span></h1>
               <p className="text-[#5D5A53] font-light leading-relaxed">
-                Ready to build something that lasts? Drop us a line. We’re usually around, unless we’re off the grid for a weekend.
+                If you've got a project in mind — big, small, half-formed — throw us a line. We'll sort through it together.
               </p>
             </div>
 
@@ -37,8 +37,10 @@ const InquiryForm: React.FC<InquiryFormProps> = ({ service, onBack }) => {
                 <p className="text-[#5D5A53] font-light">hello@reztek.digital</p>
               </div>
               <div>
-                <h4 className="text-xs font-bold uppercase tracking-widest text-[#2C2A26] mb-2">Visit Us</h4>
-                <p className="text-[#5D5A53] font-light">From the Road<br/>(Remote-First)</p>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-[#2C2A26] mb-2">Land Acknowledgement</h4>
+                <p className="text-[#5D5A53] text-[10px] font-light leading-relaxed">
+                  Operating on Treaty One Territory and the National Homeland of the Red River Métis, in Wiiniibak, Manido Abi. We acknowledge these are the ancestral lands of the Anishinaabeg, Anisininew, Ininiwak/Nehethowuk, Oceti Sakowin/Dakota Oyate, and Michif (Métis) Peoples. This territory is also a place of significance for the Denesuline and the Inuit, some of whom have been living here for generations.
+                </p>
               </div>
             </div>
           </div>

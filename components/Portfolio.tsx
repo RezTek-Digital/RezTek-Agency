@@ -3,35 +3,43 @@ import React from 'react';
 const projects = [
   {
     id: 1,
-    title: "Vanguard Logistics",
-    category: "Industrial & Gritty",
-    description: "Tracking that actually works on a phone in a warehouse.",
+    title: "business 1",
+    category: "Community Enterprise",
+    description: "A clean, functional digital ecosystem built for local impact.",
     imageUrl: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200",
     year: "2025"
   },
   {
     id: 2,
-    title: "Nexus FinTech",
-    category: "Mid-Century Modern",
-    description: "Making complex data feel as simple as a vinyl record.",
+    title: "business 2",
+    category: "Indigenous Business",
+    description: "Reliable digital tools for a growing business.",
     imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
     year: "2024"
   },
   {
     id: 3,
-    title: "Aether Architecture",
-    category: "Clean & Spacious",
-    description: "Letting the blueprints do the talking.",
+    title: "business 3",
+    category: "Local Service",
+    description: "No-nonsense web development that gets the job done.",
     imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
     year: "2025"
   },
   {
     id: 4,
-    title: "Titan Energy",
-    category: "Bold & Reliable",
-    description: "A technical site that feels as sturdy as a steel beam.",
+    title: "business 4",
+    category: "Community Project",
+    description: "Built with performance and accessibility in mind.",
     imageUrl: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=1200",
     year: "2024"
+  },
+  {
+    id: 5,
+    title: "business 5",
+    category: "Small Business",
+    description: "A digital shopfront that's easy to run and built to last.",
+    imageUrl: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1200",
+    year: "2025"
   }
 ];
 
@@ -41,9 +49,9 @@ const Portfolio: React.FC = () => {
       <div className="max-w-[1800px] mx-auto w-full">
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
           <div className="max-w-2xl">
-            <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#EF4444] mb-6 block">The Gallery</span>
+            <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#EF4444] mb-6 block">Past Projects</span>
             <h2 className="text-5xl md:text-7xl font-serif font-bold uppercase tracking-tighter leading-none">
-              Real Work <br /> <span className="text-white/40">for Real People.</span>
+              Less talk, <br /> <span className="text-white/40">more work.</span>
             </h2>
           </div>
           <p className="text-white/60 max-w-sm font-light leading-relaxed">

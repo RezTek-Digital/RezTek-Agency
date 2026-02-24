@@ -61,10 +61,10 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
           
           {/* Center Links - Desktop */}
           <div className={`hidden md:flex items-center gap-12 text-sm font-medium tracking-widest uppercase transition-colors duration-500 ${textColorClass}`}>
-            <a href="#services" onClick={(e) => handleLinkClick(e, 'services')} className="hover:opacity-60 transition-opacity">The Lab</a>
-            <a href="#portfolio" onClick={(e) => handleLinkClick(e, 'portfolio')} className="hover:opacity-60 transition-opacity">The Gallery</a>
-            <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="hover:opacity-60 transition-opacity">The Mindset</a>
-            <a href="#journal" onClick={(e) => handleLinkClick(e, 'journal')} className="hover:opacity-60 transition-opacity">The Journal</a>
+            <a href="#services" onClick={(e) => handleLinkClick(e, 'services')} className="hover:opacity-60 transition-opacity">What We Do</a>
+            <a href="#portfolio" onClick={(e) => handleLinkClick(e, 'portfolio')} className="hover:opacity-60 transition-opacity">Our Work</a>
+            <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="hover:opacity-60 transition-opacity">Who We Are</a>
+            <a href="#journal" onClick={(e) => handleLinkClick(e, 'journal')} className="hover:opacity-60 transition-opacity">Digital Muskeg</a>
           </div>
 
           {/* Right Actions */}
@@ -73,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
               onClick={handleContactClick}
               className="px-6 py-2 bg-[#EF4444] text-white text-xs font-bold uppercase tracking-widest hover:bg-[#DC2626] transition-colors hidden sm:block"
             >
-              Say Hello
+              Drop us a Line
             </button>
             
             {/* Mobile Menu Toggle */}
@@ -100,15 +100,15 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
           mobileMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-10 pointer-events-none'
       }`}>
           <div className="flex flex-col items-center space-y-8 text-xl font-serif font-medium text-[#2C2A26]">
-            <a href="#services" onClick={(e) => handleLinkClick(e, 'services')} className="hover:opacity-60 transition-opacity">The Lab</a>
-            <a href="#portfolio" onClick={(e) => handleLinkClick(e, 'portfolio')} className="hover:opacity-60 transition-opacity">The Gallery</a>
-            <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="hover:opacity-60 transition-opacity">The Mindset</a>
-            <a href="#journal" onClick={(e) => handleLinkClick(e, 'journal')} className="hover:opacity-60 transition-opacity">The Journal</a>
+            <a href="#services" onClick={(e) => handleLinkClick(e, 'services')} className="hover:opacity-60 transition-opacity">What We Do</a>
+            <a href="#portfolio" onClick={(e) => handleLinkClick(e, 'portfolio')} className="hover:opacity-60 transition-opacity">Our Work</a>
+            <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="hover:opacity-60 transition-opacity">Who We Are</a>
+            <a href="#journal" onClick={(e) => handleLinkClick(e, 'journal')} className="hover:opacity-60 transition-opacity">Digital Muskeg</a>
             <button 
                 onClick={handleContactClick} 
                 className="px-8 py-3 bg-[#EF4444] text-white text-sm uppercase tracking-widest font-bold mt-8"
             >
-                Say Hello
+                Drop us a Line
             </button>
           </div>
       </div>

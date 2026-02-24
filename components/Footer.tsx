@@ -31,51 +31,25 @@ const Footer: React.FC<FooterProps> = ({ onLinkClick }) => {
         <div className="md:col-span-4">
           <Logo variant="dark" className="h-16 w-auto mb-6" />
           <p className="max-w-xs font-light leading-relaxed">
-            Engineering the digital frontier, one pixel at a time.
+            The work speaks. We just write the code.
           </p>
         </div>
 
         <div className="md:col-span-2">
-          <h4 className="font-medium text-[#2C2A26] mb-6 tracking-wide text-sm uppercase">Services</h4>
-          <ul className="space-y-4 font-light">
-            <li><a href="#services" onClick={(e) => onLinkClick(e, 'services')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">All Services</a></li>
-            <li><a href="#services" onClick={(e) => onLinkClick(e, 'services')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Web Design</a></li>
-            <li><a href="#services" onClick={(e) => onLinkClick(e, 'services')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Branding</a></li>
-            <li><a href="#services" onClick={(e) => onLinkClick(e, 'services')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Development</a></li>
-          </ul>
-        </div>
-        
-        <div className="md:col-span-2">
-          <h4 className="font-medium text-[#2C2A26] mb-6 tracking-wide text-sm uppercase">Agency</h4>
+          <h4 className="font-medium text-[#2C2A26] mb-6 tracking-wide text-sm uppercase">Explore</h4>
           <ul className="space-y-4 font-light">
             <li><a href="#portfolio" onClick={(e) => onLinkClick(e, 'portfolio')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Our Work</a></li>
-            <li><a href="#about" onClick={(e) => onLinkClick(e, 'about')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">The Mindset</a></li>
+            <li><a href="#about" onClick={(e) => onLinkClick(e, 'about')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Who We Are</a></li>
             <li><a href="#services" onClick={(e) => onLinkClick(e, 'services')} className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Care Plans</a></li>
             <li><a href="#" className="hover:text-[#2C2A26] transition-colors underline-offset-4 hover:underline">Privacy</a></li>
           </ul>
         </div>
-
-        <div className="md:col-span-4">
-          <h4 className="font-medium text-[#2C2A26] mb-6 tracking-wide text-sm uppercase">Newsletter</h4>
-          <div className="flex flex-col gap-4">
-            <input 
-              type="email" 
-              placeholder="email@address.com" 
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              disabled={subscribeStatus === 'loading' || subscribeStatus === 'success'}
-              className="bg-transparent border-b border-[#A8A29E] py-2 text-lg outline-none focus:border-[#2C2A26] transition-colors placeholder-[#A8A29E]/70 text-[#2C2A26] disabled:opacity-50" 
-            />
-            <button 
-              onClick={handleSubscribe}
-              disabled={subscribeStatus !== 'idle' || !email}
-              className="self-start text-sm font-medium uppercase tracking-widest mt-2 hover:text-[#2C2A26] disabled:cursor-default disabled:hover:text-[#5D5A53] disabled:opacity-50 transition-opacity"
-            >
-              {subscribeStatus === 'idle' && 'Subscribe'}
-              {subscribeStatus === 'loading' && 'Subscribing...'}
-              {subscribeStatus === 'success' && 'Subscribed'}
-            </button>
-          </div>
+        
+        <div className="md:col-span-6">
+          <h4 className="font-medium text-[#2C2A26] mb-6 tracking-wide text-sm uppercase">Land Acknowledgement</h4>
+          <p className="text-[10px] font-light leading-relaxed max-w-2xl">
+            Operating on Treaty One Territory and the National Homeland of the Red River Métis, in Wiiniibak, Manido Abi. We acknowledge these are the ancestral lands of the Anishinaabeg, Anisininew, Ininiwak/Nehethowuk, Oceti Sakowin/Dakota Oyate, and Michif (Métis) Peoples. This territory is also a place of significance for the Denesuline and the Inuit, some of whom have been living here for generations.
+          </p>
         </div>
       </div>
 
